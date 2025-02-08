@@ -1,0 +1,27 @@
+.hero-section {
+    background-image: url("./bg-2.webp");
+    background-size: cover; /* Fills the section while maintaining aspect ratio */
+    background-position: top center;
+    background-repeat: no-repeat;
+    max-height: 500px; /* Limit the maximum height */
+}
+
+/* Heading styles */
+.hero-heading {
+    font-size: clamp(1.8rem, 5vw, 2.5rem); /* Responsive text */
+    font-weight: bold;
+    max-width: 90%;
+}
+
+/* 📱 Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh; /* Reduce height for better fit */
+        padding: 0 20px; /* Reduce padding */
+    }
+
+    .hero-heading {
+        font-size: 1.6rem; /* Slightly smaller text */
+        max-width: 95%; /* Allow text to fit better */
+    }
+}
